@@ -5,7 +5,7 @@ div {
 
 nav a {
     text-align: center;
-    color:rgb(40, 21, 146);
+    color:black;
     text-decoration: none;
 }
 
@@ -23,6 +23,11 @@ main section{
 
 #background {
     height: 725px;   
+}
+
+.book,.join {
+    background-color: gold;
+
 }
 
 body {
@@ -56,7 +61,7 @@ footer {
     color: black
 }
 
-.icon{
+.icon, .logo{
     width: 80px;
 
 }
