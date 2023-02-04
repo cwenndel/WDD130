@@ -7,11 +7,19 @@ nav a {
     text-align: center;
     color:black;
     text-decoration: none;
+    padding: 6px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding-left: 30px;
+    padding-right: 25px;
+    font-size: 18px; 
+
 }
 
 h1, h4 {
     text-align: center;
+
 }
+
 
 .button-box {
     text-align: center;
@@ -19,6 +27,7 @@ h1, h4 {
 
 main section{
     text-align: center;
+    
 }
 
 #background {
@@ -27,11 +36,27 @@ main section{
 
 .book,.join {
     background-color: gold;
-
+    padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 body {
-    background-color: beige; 
+    background-color: beige;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+h2 {
+    margin: 0;
 }
 header {
     background-color:#00a896 ;
@@ -43,6 +68,7 @@ nav a:hover {
 
 .book, .join {
     color:rgb(40, 21, 146);
+    margin-top: 50px;
 }
 
 .book:hover, .join:hover {
@@ -51,8 +77,14 @@ nav a:hover {
 
 .msg {
     background-color: #00a896;
-}
+    line-height: 1.5em;
+    padding: 35px;
+  }
+                
+.msg p{
+    padding-bottom: 15px;
 
+}
 footer {
     background-color: #00a896;    
 }
@@ -94,4 +126,42 @@ section a {
 section a:hover{
     background-color: beige;    
 
+}
+
+.home-title {
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+
+#logo_link{
+    padding-top: 10px;    
+
+}
+
+.icon{
+    padding-top: 10px;
+}
+
+footer{
+    padding:20px 50px;
+    margin-top: 100px;
+}
+
+footer .social img{
+    padding-top:5px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 100px 0;
+}
+
+.card-img {
+    border: 10px solid rgb(134, 129, 103);
+
+}
+
+main section img {
+    box-sizing: border-box;
 }
