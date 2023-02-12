@@ -179,8 +179,8 @@
 .content6 {
   /* This is the parent of the activity 6 boxes. */
   display:grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: 1fr 1fr 1fr 1fr  1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
   grid-gap:0;
   width: 600px;
 
