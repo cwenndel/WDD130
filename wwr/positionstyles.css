@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-gap: 20px;
+  
   /* This is the parent of the activity 1 boxes. */
 
 }
