@@ -11,7 +11,7 @@ Fonts are separated by a | */
   --accent2-color: #00f2fe;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Roboto', sans-serif, "open-sans";
+  --heading-font:  'Times New Roman', Arial, "Sans-serif";
 
   --paragraph-font: Arial, "Montserrat", sans-serif;
 
