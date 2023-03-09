@@ -311,8 +311,8 @@ border-radius: 20px;
 
 }
 .river{
-    padding: 20px;
-    grid-column: 2/3;
+    padding: 10px;
+    grid-column: 2/4;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
