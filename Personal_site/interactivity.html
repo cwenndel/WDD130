@@ -4,51 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactivity</title>
+    <link rel="stylesheet" href="styles/personal-site.css">
 </head>
+<body>
 <div id="content">
     <header>       
         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/VisualDash.png" alt="VisualDash Logo">
+            <img class="logo" src="images/logo_visualdash.png" alt="VisualDash Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="interactivity.html">Interactivity</a>
             <a href="contactus.html">Contact Us</a>
         </nav>
-   
-<main class="interactivity-grid">
-    <section class="dashboard-card">
-        <img class="dashboard-img" src="images/dashboard2.png" alt="Overview">
-        
-        <h2> Interactivity</h2>
-    </section>
-    <div id="insights"></div>
-    <img class="insights-dashboard" src="images/dashboard3.png" alt="insights">
-    <section class="msg">
-        <h2>Dashboards empower companies to make data-driven decisions that improve performance.
-        </h2>
-        <p>Dashboards offer a dynamic experience, where information can be filtered and manipulated to highlight changes over time, achieved results, and potential threats that can impact the company. With this interactivity, it's possible to access few or many data points based on a given time frame. It's also important to have an analytical view to understand the generated information and make decisions for improving the company.</p>
-    </section>
-        <main>
-        </main> 
-        <footer>
-            <p> Personal Site &copy; 2023 - Wenndel Santos</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com"  target="_blank">
-                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
-                </a>
-            </div>
-        </footer>    
-<body>
+        </header>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Dashboard.png" alt="Dash" style="width:100%">
+      <div class="text1">Have visual control panels</div>
+    </div>
     
-</body>
-</html>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/dashboard6.jpg"  alt="dash" style="width:100%">
+      <div class="text1">Dashboard provide valuable insights to guide business strategy</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/dashboard1.png" alt="Dash" style="width:100%">
+      <div class="text1">Dashboard is crucial for monitoring and analyzing data.</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+      <main class="interactivity-grid">
+        
+            <img class="dashboard-img" src="images/dashboard2.png" alt="Overview">
+        <div class="msg1">
+            
+            <p> Dashboards empower companies to make data-driven decisions that improve performance.</p>
+            
+        </div>
+        <div class="container">
+            <div id="insights"></div>
+            <img class="insights-dashboard" src="images/dashboard3.png" alt="insights">
+        <div class="msg2">
+            
+            <p>Dashboards offer a dynamic experience, where information can be filtered and manipulated to highlight changes over time, achieved results, and potential threats that can impact the company. With this interactivity, it's possible to access few or many data points based on a given time frame. It's also important to have an analytical view to understand the generated information and make decisions for improving the company.</p>
+        </div>
+        </div>
+      </main>
+    </div>
+<footer>
+      <p> Personal Site &copy; 2023 - Wenndel Santos</p>
+      <p><a href="site-plan.html">Site Plan</a></p>
+      <p><a href="contactus.html">Contact Us</a></p>
+      <div class="social">
+          <a href="https://facebook.com" target="_blank">
+              <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com"  target="_blank">
+              <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+          </a>
+      </div>
+    </footer>    
+    
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+</html> 
+    
