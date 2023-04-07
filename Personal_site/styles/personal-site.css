@@ -71,15 +71,17 @@ header{
 .text{
     display: block;
     background-color: #1d405e;
+    margin-left: 280px;
     width: 35%;
     height: 300px;
     box-shadow: 5px 5px 5px 5px rgb(31, 18, 18);
     padding-top: 0%;
     text-align: center;
     font-family: Arial;
+    margin-left: 320px;
 }
 .text2{
-    display: block;
+    display: flex;
     background-color: #1d405e;
     width: 35%;
     height: 300px;
@@ -88,17 +90,25 @@ header{
     font-family: arial;
     color: rgb(237, 229, 229);
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 30px;
+    margin-right: 150px;
+    justify-content: center;
 }
 
 .text2 h3{
     margin-top: 20%;
+    margin-left: 40px;
+    margin-right: 35px;
+    align-self: center;
+    padding-top: 50px;
+
 }
 
 .container-dash {
     display: flex;
     align-items: center;
     margin-top: 70px;
+    margin-left: 40px;
 }
 
 div p{
@@ -109,6 +119,8 @@ div p{
 .container-insights {
     display: flex;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 100px;
 
 }
 
@@ -132,7 +144,8 @@ div h3{
     padding: 10px;
     order: 2;
     box-shadow: 0 0 5px 5px rgb(31, 18, 18);
-}
+    margin-left: 200px;
+    }   
 
 footer .social img{
     padding-top: 10px;
